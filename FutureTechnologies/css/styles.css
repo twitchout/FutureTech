@@ -1,0 +1,146 @@
+/*
+Author: Jeremy Kirkpatrick
+Date: 10-19-24
+File Name: styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/*style rules for body */
+body
+{
+    background: linear-gradient(to right, #900603, #fff);
+    /*this centers all text inside body portion of html */
+    text-align: center;
+}
+/*style rule for h1, this will affect all headers at the top of pages, will inlcude custom font, and text shadow */
+h1
+{
+    font-family: "Oswald", sans-serif;
+    font-size: 3.5em;
+    text-shadow: 2px, 2px, #fff;
+
+}
+h2
+{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 3.0em;
+    text-shadow: 0 0 3px #FF0000;
+}
+/*style rules for header, really just applying a different color to background. */
+header 
+{
+    background-color: rgb(226,63,68);
+    position: -webkit-sticky;
+    position: sticky;
+    height: 120x;
+}
+footer
+{
+    position: fixed;
+    bottom: 0;
+}
+/*style rules for nav */
+nav
+{
+  padding: 1%;
+  margin-bottom:1%;
+  background-color: #ce757294;
+}
+
+nav ul 
+{
+  list-style-type: none;
+  text-align: center;
+}
+
+
+nav li 
+{
+  font-size: 1.0em;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*style rule for nth-child element, will demonstrate on 2nd item in nav on all pages */
+li:nth-child(2)
+{
+    background-color: yellow;
+}
+
+/*Style rules for main content */
+main
+{
+    padding: 1%;
+}
+article
+{
+    padding: 2%;
+    margin: 2% 1%;
+}
+/*Style rules for images */
+img
+{
+    width: 100;
+    height:auto;
+    border: 1px solid #000;
+}
+/*style rules for container column size */
+.container
+{
+    column-width: 100px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    padding: 1%;
+}
+/*style rule for variable that will span 3 grid lines */ 
+.exampleitem
+{
+    grid-column-start: 1;
+    grid-column-end: 4 ;
+}.exampleBox
+{
+    border: 1px solid #000;
+    margin: 2%;
+    padding: 2%;
+    background-color: #f67979;
+    color: #091034;
+    width: 400px;
+    height: 170px;
+    box-shadow:20px 20px 50px 10px red;
+}
+    /* Media Query for Tablet Viewports */
+@media screen and (min-width: 481px) {
+    
+    article
+    {
+        width: 42%;
+        float: left;
+        height: 160px;
+    }
+    footer {
+        clear: left;
+    }
+    
+}
+
+/* Media Query for Desktop Viewports */
+@media screen and (min-width: 900px) {
+    
+    article {
+        width: 27%;
+        height: 140px;
+    }
+    article:hover{
+        background-color:#ffe5dc;
+        color: #E3242B;
+    }
+    
+}
