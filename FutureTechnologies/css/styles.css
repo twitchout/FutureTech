@@ -44,7 +44,7 @@ header
 }
 footer
 {
-    position: fixed;
+    position: static;
     bottom: 0;
 }
 /*style rules for nav */
@@ -71,7 +71,7 @@ nav li
 /*style rule for nth-child element, will demonstrate on 2nd item in nav on all pages */
 li:nth-child(2)
 {
-    background-color: yellow;
+    background-color: red;
 }
 
 /*Style rules for main content */
